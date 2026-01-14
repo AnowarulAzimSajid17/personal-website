@@ -14,6 +14,17 @@
   box-sizing: border-box;
 }
 
+/* Shared Styles */
+.primary-btn {
+  padding: 18px 57px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #ff8063;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 /* Header Styles */
 
 /* Navbar Styles */
@@ -21,7 +32,7 @@
   display: flex;
   gap: 40px;
   justify-content: right;
-  margin: 37px 50px 0px 70px;
+  margin: 37px 50px 0px 50px;
   list-style: none;
 }
 
@@ -31,10 +42,62 @@
   color: #3c3c3c;
 }
 
+/* Banner Styles */
+.banner {
+  margin: 50px 50px 120px 70px;
+  display: flex;
+  gap: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  width: 348px;
+}
+
+.banner-content h3 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.banner-content h3 .name-color-1 {
+  color: #363958;
+}
+
+.banner-content h3 .name-color-2 {
+  color: #ff8367;
+}
+
+.banner-content p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 36px;
+}
+
+.banner-image img {
+  width: 465px;
+}
+
 /* Media Query Styles */
 @media screen and (max-width: 576px) {
+  /* Navbar Styles */
   .navbar ul {
     justify-content: center;
     margin: 30px auto;
+  }
+
+  /* Banner Styles */
+  .banner {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .banner-content {
+    text-align: center;
+  }
+
+  .banner-image img {
+    width: 100%;
   }
 }
