@@ -13,3 +13,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Header Styles */
+
+/* Navbar Styles */
+.navbar ul {
+  display: flex;
+  gap: 40px;
+  justify-content: right;
+  margin: 37px 50px 0px 70px;
+  list-style: none;
+}
+
+.navbar ul li {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3c3c3c;
+}
+
+/* Media Query Styles */
+@media screen and (max-width: 576px) {
+  .navbar ul {
+    justify-content: center;
+    margin: 30px auto;
+  }
+}
