@@ -152,6 +152,38 @@
   color: #6c6c6c;
 }
 
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+footer p {
+  color: #696871;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #363958;
+  margin-bottom: 23px;
+}
+
+.footer-images {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-images img {
+  width: 40px;
+}
+
 /* Media Query Styles */
 @media screen and (max-width: 576px) {
   /* Navbar Styles */
