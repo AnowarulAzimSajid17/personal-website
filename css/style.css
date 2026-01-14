@@ -44,7 +44,7 @@
 
 /* Banner Styles */
 .banner {
-  margin: 50px 50px 120px 70px;
+  margin: 50px 50px 120px 40px;
   display: flex;
   gap: 400px;
   justify-content: center;
@@ -61,11 +61,11 @@
   margin-bottom: 18px;
 }
 
-.banner-content h3 .name-color-1 {
+.name-color-1 {
   color: #363958;
 }
 
-.banner-content h3 .name-color-2 {
+.name-color-2 {
   color: #ff8367;
 }
 
@@ -77,6 +77,79 @@
 
 .banner-image img {
   width: 465px;
+}
+
+/* About Me Styles */
+.about-me-container {
+  display: flex;
+  gap: 270px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-image img {
+  width: 476px;
+}
+
+.about-me-content {
+  width: 451px;
+}
+
+.about-me-content h3 {
+  color: #363958;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 27px;
+}
+
+.about-me-content p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #3e3e3e;
+  margin-bottom: 24px;
+}
+
+/* Project Styles */
+.project-container {
+  margin: 100px auto 50px;
+}
+
+.project-heading h3 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.project-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 30px;
+  width: 370px;
+  border: 2px solid rgba(173, 162, 162, 0.597);
+  border-radius: 10px;
+}
+
+.card img {
+  width: 300px;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #363958;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #6c6c6c;
 }
 
 /* Media Query Styles */
@@ -99,5 +172,31 @@
 
   .banner-image img {
     width: 100%;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .about-me-content {
+    text-align: center;
+    width: 351px;
+  }
+
+  .about-me-content p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .about-me-image img {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  /* Project Styles */
+  .project-cards {
+    flex-direction: column;
   }
 }
